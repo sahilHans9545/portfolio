@@ -6,7 +6,7 @@ function LeftSection(){
         <>
             <div className="left-section">
                 <div className="profile">
-                <img src="./portfolio/images/sahil-profile.jpg" alt=""/>
+                <img src="./images/sahil-profile.jpg" alt=""/>
                 </div>
                 <h3 className="text-center text-white mt-4">Sahil Hans</h3>
 

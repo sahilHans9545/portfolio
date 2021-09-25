@@ -7,7 +7,6 @@ import { useEffect } from "react";
 function App() {
 
   
-
   useEffect(()=>{
     const menuBar=document.querySelector(".menuBar");
     const leftCont=document.querySelector(".left-section-cont")

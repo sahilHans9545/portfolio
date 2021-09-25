@@ -268,7 +268,8 @@ a{
 }
 
 @media screen and (max-width:600px) {
-    html{
-      font-size: 12px;
-    }
+  .right-section .text-cont h1{
+    font-size: 2.8rem;
+  }
 }
+
