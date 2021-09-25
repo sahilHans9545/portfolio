@@ -57,7 +57,7 @@ a{
 
 .row .left-section-cont{
   width: 300px;
-  position: sticky !important;
+  position: relative;
   top: 0%;
   padding:0%;
   overflow: hidden;
