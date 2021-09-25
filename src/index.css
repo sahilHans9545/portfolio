@@ -5,6 +5,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+  overflow: hidden;
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+}
+
 ul{
   padding-left: 0% !important;
   list-style: none;
@@ -15,11 +24,48 @@ a{
 
 .main-cont{
   padding: 0% !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuBar{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+.menuBar div{
+  width: 30px;
+  height: 3px;
+  margin-top: 4px;
+  background-color: #ffffff;
+  transition: 0.2s;
+  
+}
+
+.menuBar div:nth-child(2){
+  width: 22px;
+}
+
+.menuBar div:nth-child(3){
+  width: 13px;
+}
+
+
+.row .left-section-cont{
+  width: 300px;
+  position: relative;
+  padding:0%;
+  overflow: hidden;
+  transition: 0.7s;
 }
 
 .left-section{
   height: 100vh;
-  width: 300px;
+  width: 100%;
   background-color: #040b14;
   padding: 25px;
 
@@ -29,12 +75,19 @@ a{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: whitesmoke;
   margin: 15px auto;
   position: relative;
 }
 
-.profile::after{
+.profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile::before{
   content: '';
   position: absolute;
   width: 115px;
@@ -43,7 +96,8 @@ a{
   top: -7.5px;
   left: -7.5px;
   border-radius: 50%;
-  animation: blur 2s linear infinite;
+  /* animation: blur 2s linear infinite; */
+  
 }
 
 @keyframes blur {
@@ -78,8 +132,9 @@ a{
 
 .menu i{
   color: #a8a9b4;
-  width: 50px;
+  margin-right: 30px;
   font-size: 18px;
+  transition: 0.2s;
 }
 
 .menu li{
@@ -98,5 +153,122 @@ a{
 
 .left-section .menu a:hover i{
     color:rgb(47, 235, 235);
-    
+    box-shadow: 0 0 5px rgb(47, 235, 235),0 0 15px rgb(47, 235, 235),0 0 25px rgba(47, 235, 235,0.5);
+    border-radius: 50%;
+}
+
+/* right section starts */
+
+.row .right-section-cont{
+  width: calc(100% - 300px);
+  padding:0%;
+}
+
+
+.right-section header{
+  width: 100%;
+  min-height: 400px;
+  height: 100vh;
+  background-image: linear-gradient( 109.6deg,  rgba(255,174,0,1) 11.2%, rgba(255,0,0,1) 100.2% );
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-section header svg{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100% !important;
+}
+
+.right-section .text-cont{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.right-section .text-cont h1{
+  font-size: 4rem;
+}
+
+.right-section .text-cont .typing{
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -6px;
+    width: 2.5px;
+    height: 100%;
+    background-color: white;
+    animation: blink 0.5s linear infinite;
+}
+
+.typing::before{
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(47, 235, 235);
+  transform: 0.2s;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0.7;
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  .row .left-section-cont{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    transform: translateX(-300px);
+    z-index: 1;
+  }
+
+  .row .show-left{
+    transform: translateX(0px);
+  }
+
+  .menuBar{
+    display: block;
+  }
+
+  .right-section-cont{
+    width: 100% !important;
+  }
+
+  .cross-menu div:nth-child(1){
+    transform: rotate(-45deg);
+    position: relative;
+    top: 5px;
+  }
+
+  .cross-menu div:nth-child(2){
+    width: 30px;
+    transform: rotate(45deg);
+  }
+  
+  .cross-menu div:nth-child(3){
+    opacity: 0;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+    html{
+      font-size: 12px;
+    }
 }
