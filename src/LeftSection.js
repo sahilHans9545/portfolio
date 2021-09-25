@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.css';
+import profile from "./images/sahil-profile.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function LeftSection(){
     return (
         <>
             <div className="left-section">
                 <div className="profile">
-                <img src="./images/sahil-profile.jpg" alt=""/>
+                <img src={profile} alt=""/>
                 </div>
                 <h3 className="text-center text-white mt-4">Sahil Hans</h3>
 

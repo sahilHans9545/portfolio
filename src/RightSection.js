@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import profile from "./images/sahil-profile.jpg";
+import head1 from "./images/head1.jpg";
+import head2 from "./images/head2.jpg";
+import head3 from "./images/head3.jpg";
 
 function RightSection() {
 
+    let [bg,setbg]=useState(head1);
+    let bgImages=[head1,head2,head3];
+    let bg_no=0;
     let [type,setType]=useState("");
     const textArr=["Web Developer","Freelancer","Designer"];
      let count =0;
@@ -29,21 +36,39 @@ function RightSection() {
         }
     }
 
+    const changeBg=()=>{
+        if(bg_no===3){
+            bg_no=0;
+        }
+        setbg(bgImages[bg_no])
+        bg_no++;
+        setTimeout(changeBg,4000)
+    }
+
+    
+    
+
     useEffect(()=>{
         typing();
+        changeBg();
     },[]);
 
     return (
         <div className="right-section">
-            <header>
-            
-            <div className="text-cont">
-                <h1>Sahil Hans</h1>
-                <h3>I am <span className="typing">{type}</span></h3>
-            </div>
+            <header style={{background:`url(${bg})`}}>
+           
+                <div className="text-cont">
+                    <h1>Sahil Hans</h1>
+                    <h3>I am <span className="typing">{type}</span></h3>
+                </div>
 
-                
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#fff" fillOpacity="1" d="M0,32L80,32C160,32,320,32,480,58.7C640,85,800,139,960,149.3C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                <div className="profile-head">
+                    
+                </div>
+           
+            
+
+           
             </header>
         </div>
     )
