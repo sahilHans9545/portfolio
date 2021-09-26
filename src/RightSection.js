@@ -5,9 +5,7 @@ import head3 from "./images/head3.jpg";
 
 function RightSection() {
 
-    let [bg,setbg]=useState(head1);
-    // let bgImages=[head1,head2,head3];
-    // let bg_no=0;
+    
     let [type,setType]=useState("");
     // const textArr=["Web Developer","Freelancer","Designer"];
     //  let count =0;
@@ -17,8 +15,8 @@ function RightSection() {
     
 
     useEffect(()=>{
-        let bgImages=[head1,head2,head3];
-        let bg_no=0;
+        
+       
         const textArr=["Web Developer","Freelancer","Designer"];
         let count =0;
         let index=0;
@@ -46,20 +44,78 @@ function RightSection() {
             }
         }
         typing();
-        const changeBg=()=>{
-            if(bg_no===3){
-                bg_no=0;
-            }
-            setbg(bgImages[bg_no])
-            bg_no++;
-            setTimeout(changeBg,4000)
+
+
+        let slider=document.querySelector(".slider");
+      let slide_box=document.querySelector(".slide-box");
+      let sliderDots=document.querySelectorAll(".slider .dots div");
+      let sliderWidth=slider.clientWidth;
+      console.log(sliderWidth)
+
+      let slideCount=0;
+
+      setInterval(() => {
+        if(slideCount===3){
+            slideCount=0;
+            slide_box.style.transition="none";
         }
-        changeBg();
+        else{
+            slide_box.style.transition="all 0.5s";
+        }
+        changeSlide(slideCount);
+        dotBg(slideCount);
+        
+        slideCount++;
+        
+      }, 4000);
+
+      const changeSlide=(Num)=>{
+        slide_box.style.transform=`translateX(${ -(Num * sliderWidth)}px)`;
+      }
+
+      for(let i=0;i<sliderDots.length;i++){
+        sliderDots[i].addEventListener("click",()=>{
+            changeSlide(i);
+            dotBg(i);
+        })
+      }
+
+      const dotBg=(white)=>{
+        for(let j=0;j<sliderDots.length;j++){
+                sliderDots[j].style.background="black";
+                sliderDots[white].style.background="#fff"
+        }
+      }
+        
+
     },[]);
 
     return (
         <div className="right-section">
-            <header style={{background:`url(${bg})`}}>
+            <header>
+
+            <div className="slider">
+        <div className="slide-box">
+            <div className="slide">
+                <img src={head1} alt="" />
+            </div>
+
+            <div className="slide">
+                <img src={head2} alt="" />
+            </div>
+
+            <div className="slide">
+                <img src={head3} alt="" />
+            </div>
+        </div>
+
+        <div className="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
            
                 <div className="text-cont">
                     <h1>Sahil Hans</h1>
