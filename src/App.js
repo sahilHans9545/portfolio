@@ -25,7 +25,7 @@ function App() {
         <div></div>
         <div></div>
       </div>
-          <div className="row d-flex">
+          <div className="row d-flex mx-0">
             <div className="left-section-cont">
                 <LeftSection></LeftSection>
             </div>

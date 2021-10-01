@@ -2,17 +2,12 @@ import React, { useEffect, useState } from 'react'
 import head1 from "./images/head1.jpg";
 import head2 from "./images/head2.png";
 import head3 from "./images/head3.jpg";
+import Skills from './skills';
 
 function RightSection() {
 
     
     let [type,setType]=useState("");
-    // const textArr=["Web Developer","Freelancer","Designer"];
-    //  let count =0;
-    //  let index=0;
-    //  let textString="";
-    //  let letter="";
-    
 
     useEffect(()=>{
         
@@ -46,7 +41,7 @@ function RightSection() {
         typing();
 
 
-        let slider=document.querySelector(".slider");
+      let slider=document.querySelector(".slider");
       let slide_box=document.querySelector(".slide-box");
       let sliderDots=document.querySelectorAll(".slider .dots div");
       let sliderWidth=slider.clientWidth;
@@ -127,9 +122,8 @@ function RightSection() {
                 </div>
            
             
-
-           
             </header>
+            <Skills></Skills>
         </div>
     )
 }
