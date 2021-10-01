@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react/cjs/react.development'
+import React, { useEffect} from 'react'
 
 import head1 from "./images/head1.jpg";
 import head2 from "./images/head2.png";
