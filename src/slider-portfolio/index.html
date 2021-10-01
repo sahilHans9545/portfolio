@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio slider</title>
+
+    <style>
+        .head-slider{
+            width: 800px;
+            height: 550px;
+            background-color: black;
+            margin: 100px 200px;
+            position: relative;
+            border: 5px solid red;
+            overflow: hidden;
+        }
+
+        .head-slider .inner-slider{
+            width: calc(100% * 3);
+            height: 100%;
+            display: flex;
+        }
+
+        .inner-slider .item{
+            height: 100%;
+            width: calc(100% / 3);
+            position: relative;
+        }
+
+        .inner-slider .item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-dots{
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .slider-dots .dot{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: rgba(230, 228, 228, 0.589);
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .slider-dots .dot-bg{
+            background-color: rgb(98, 233, 238);
+            box-shadow: 0 0 0 2px rgba(98, 233, 238, 0.466),
+            0 0 0 2px rgba(98, 233, 238, 0.366),
+            0 0 0 8px rgba(98, 233, 238, 0.2);
+        }
+
+        .slide{
+            animation: slideAnimate 1s linear;
+        }
+
+        @keyframes slideAnimate{
+            0%{
+                transform: scale(2);
+            }
+
+            100%{
+                transform: scale(1);
+            }
+        }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="head-slider">
+
+        <div class="inner-slider">
+            <div class="item">
+                <img src="images/head1.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="images/head2.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="images/head3.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="slider-dots">
+            <div class="dot dot-bg"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+   const sliderdots=[...document.querySelectorAll(".slider-dots .dot")];
+
+   console.log(sliderdots)
+
+   let sliderImages=document.querySelectorAll(".inner-slider .item img")
+   
+   let imageWidth=sliderImages[0].clientWidth
+
+   const innerslider=document.querySelector(".inner-slider");
+
+   let countSlide=0;
+
+   const changeBg=(num)=>{
+        innerslider.style.transform=`translateX(${-(num * imageWidth)}px)`
+   }
+
+   const maintainSliderClasses=(num)=>{
+    for(let i=0;i<sliderdots.length;i++){
+            sliderdots[i].classList.remove("dot-bg");
+            sliderdots[num].classList.add("dot-bg");
+            sliderImages[i].classList.remove('slide')
+            sliderImages[num].classList.add('slide')
+        }
+   }
+
+   sliderdots.forEach((dot,ind)=>{
+       dot.addEventListener("click",()=>{
+        
+           count=ind;
+           changeBg(count);
+
+           clearInterval(sliderInterval);
+           maintainSliderClasses(ind);
+       })
+   })
+
+
+   sliderInterval=setInterval(()=>{
+       countSlide++
+       if(countSlide==3){
+           countSlide=0;
+       }
+
+       maintainSliderClasses(countSlide);
+
+
+       changeBg(countSlide);
+   },3000)
+
+  
+
+
+    </script>
+
+</body>
+</html>
