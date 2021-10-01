@@ -176,7 +176,6 @@ a{
   width: 100%;
   min-height: 400px;
   height: 100vh;
-  background-image: url(./images/head1.jpg);
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -231,58 +230,75 @@ a{
 }
 
 
-
-.slider{
+.head-slider{
+  background-color: black;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-  position: relative;
   overflow: hidden;
 }
 
-.slider .slide{
-  width: 100%;
+.head-slider .inner-slider{
+  width: calc(100% * 3);
   height: 100%;
-  position: relative;
-}
-
-.slide-box{
-  height: 100%;
-  width: 300%;
   display: flex;
-  position: relative;
-  transition: all 0.8s;
 }
 
-.slider .slide img{
+.inner-slider .item{
+  height: 100%;
+  width: calc(100% / 3);
+  position: relative;
+}
+
+.inner-slider .item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.slider .dots{
+.slider-dots{
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
 
-.slider .dots div{
-  height: 12px;
+.slider-dots .dot{
   width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: black;
-  border: 1px solid #ffffff;
-  margin: 0px 5px;
+  margin: 0 5px;
+  background-color: rgba(230, 228, 228, 0.589);
+  z-index: 1;
   cursor: pointer;
 }
 
-.slider .dots div:nth-child(1){
-  background-color: #ffffff;
+.slider-dots .dot-bg{
+  background-color: rgb(98, 233, 238);
+  box-shadow:0 0 0 2px rgba(98, 233, 238, 0.366),
+  0 0 0 8px rgba(98, 233, 238, 0.2);
 }
 
+.slide{
+  animation: slideAnimate 1s linear;
+}
+
+@keyframes slideAnimate{
+  0%{
+      transform: scale(2);
+  }
+
+  100%{
+      transform: scale(1);
+  }
+}
+
+
+
 section{
-  background-color: rgba(134, 210, 255, 22%);
+  background-color: rgb(140 198 233 / 22%);
 }
 
 
