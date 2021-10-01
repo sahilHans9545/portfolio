@@ -1,12 +1,7 @@
-import React, { useEffect} from 'react'
-
+import React , { useEffect } from 'react'
 import head1 from "./images/head1.jpg";
 import head2 from "./images/head2.png";
 import head3 from "./images/head3.jpg";
-
-
-
-
 
 
 function Slider() {
