@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.slider{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-slider{
+  width: 100%;
+  height: 100%;
+}
+
+
+.inner-slider .slide{
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s;
+}
+
+
+.inner-slider .slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inner-slider .active-slide{
+  opacity: 1;
+  animation: activeSlide 1s linear;
+}
+
+@keyframes activeSlide{
+  0%{
+    transform: scale(2);
+  } 
+
+  100%{
+    transform: scale(1);
+  } 
+}
+
+.dots{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.726);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots .active-dot{
+  background-color: rgb(55, 243, 234);
+  box-shadow: 0 0 2px rgba(55, 243, 234, 0.705),0 0 5px rgba(55, 243, 234, 0.397),0 0 0 7px rgba(55, 243, 234, 0.397) ;
+}
