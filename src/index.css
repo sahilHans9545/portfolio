@@ -300,7 +300,7 @@ a{
 
 
 
-section{
+section:nth-child(2n){
   background-color: rgb(140 198 233 / 22%);
 }
 
@@ -347,7 +347,34 @@ section .progress-bar .progress{
   opacity: 0;
 }
 
+.services .content{
+  margin-left: 60px;
+  word-break: break-all;
+}
 
+
+
+.services .icon{
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #149ddd;
+  float: left;
+
+}
+
+.services .icon i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.content .title{
+  font-weight: 900;
+  font-size: 1.3rem;
+}
 
 
 
@@ -356,7 +383,7 @@ section .progress-bar .progress{
 
 
 @media screen and (max-width:800px) {
-  .row .left-section-cont{
+  /* .row .left-section-cont{
     position: fixed;
     left: 0%;
     top: 0%;
@@ -393,7 +420,7 @@ section .progress-bar .progress{
 
   .row .right-section-cont{
     margin-left: 0%;
-  }
+  } */
 
 }
 
@@ -403,3 +430,52 @@ section .progress-bar .progress{
   }
 }
 
+
+
+@media screen and (max-width:1200px) {
+
+
+  .row .left-section-cont{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    transform: translateX(-300px);
+    z-index: 1;
+  }
+
+  .row .show-left{
+    transform: translateX(0px);
+  }
+
+  .menuBar{
+    display: block;
+  }
+
+  .right-section-cont{
+    width: 100% !important;
+  }
+
+  .cross-menu div:nth-child(1){
+    transform: rotate(-45deg);
+    position: relative;
+    top: 5px;
+  }
+
+  .cross-menu div:nth-child(2){
+    width: 30px;
+    transform: rotate(45deg);
+  }
+  
+  .cross-menu div:nth-child(3){
+    opacity: 0;
+  }
+
+
+
+
+
+
+  .row .right-section-cont{
+    margin-left: 0%;
+  }
+}
