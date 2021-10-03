@@ -7,7 +7,7 @@ function Services() {
             <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 
             <div className="row">
-                <div className="col-md-6 col-lg-4 col-12">
+                <div className="col-md-6 col-lg-4 col-12 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -22,7 +22,7 @@ function Services() {
 
 
 
-                <div className="col-md-6 col-lg-4 col-12">
+                <div className="col-md-6 col-lg-4 col-12 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -35,7 +35,7 @@ function Services() {
                 </div>
 
 
-                <div className="col-md-6 col-lg-4 col-12">
+                <div className="col-md-6 col-lg-4 col-12 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -48,7 +48,7 @@ function Services() {
                 </div>
 
 
-                <div className="col-md-6 col-lg-4 col-12 mt-md-2">
+                <div className="col-md-6 col-lg-4 col-12 mt-md-2 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -62,7 +62,7 @@ function Services() {
                 </div>
 
 
-                <div className="col-md-6 col-lg-4 col-12 mt-md-2">
+                <div className="col-md-6 col-lg-4 col-12 mt-md-2 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -75,7 +75,7 @@ function Services() {
 
                 </div>
 
-                <div className="col-md-6 col-lg-4 col-12 mt-md-2">
+                <div className="col-md-6 col-lg-4 col-12 mt-md-2 item">
 
                     <div className="icon">
                         <i class="far fa-envelope"></i>
@@ -87,8 +87,6 @@ function Services() {
                     </div>
 
                 </div>
-
-
 
 
 

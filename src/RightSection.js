@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Services from './Services';
 import Skills from './skills';
 import Slider from './Slider';
+import Testimonials from './Testimonials';
 
 function RightSection() {
 
@@ -63,6 +64,7 @@ function RightSection() {
             </header>
             <Skills></Skills>
             <Services></Services>
+            <Testimonials></Testimonials>
         </div>
     )
 }

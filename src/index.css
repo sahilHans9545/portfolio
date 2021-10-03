@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+  --primary-blue:#149ddd;
+}
+
 body{
   overflow-x: hidden;
   width: 100%;
@@ -327,7 +331,7 @@ section .progress-bar{
 }
 
 section .progress-bar .progress{
-  background-color: rgb(27, 123, 248);
+  background-color: var(--primary-blue);
   width: 0%;
   transition: 1.3s;
   border-radius: 0%;
@@ -352,8 +356,6 @@ section .progress-bar .progress{
   word-break: break-all;
 }
 
-
-
 .services .icon{
   width: 45px;
   height: 45px;
@@ -361,68 +363,32 @@ section .progress-bar .progress{
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  background-color: #149ddd;
+  background-color: var(--primary-blue);
   float: left;
-
+  transition: 0.3s;
 }
 
 .services .icon i{
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
+}
+
+.services .item:hover .icon{
+  background-color: #fff;
+  border: 1.5px solid var(--primary-blue);
+}
+
+.services .item:hover i{
+  color: var(--primary-blue);
 }
 
 .content .title{
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 
 
-
-
-
-
-@media screen and (max-width:800px) {
-  /* .row .left-section-cont{
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    transform: translateX(-300px);
-    z-index: 1;
-  }
-
-  .row .show-left{
-    transform: translateX(0px);
-  }
-
-  .menuBar{
-    display: block;
-  }
-
-  .right-section-cont{
-    width: 100% !important;
-  }
-
-  .cross-menu div:nth-child(1){
-    transform: rotate(-45deg);
-    position: relative;
-    top: 5px;
-  }
-
-  .cross-menu div:nth-child(2){
-    width: 30px;
-    transform: rotate(45deg);
-  }
-  
-  .cross-menu div:nth-child(3){
-    opacity: 0;
-  }
-
-  .row .right-section-cont{
-    margin-left: 0%;
-  } */
-
-}
 
 @media screen and (max-width:600px) {
   .right-section .text-cont h1{
