@@ -18,7 +18,7 @@ function InnerSlider() {
 
         let ss=0;
 
-        const interval=setInterval(() => {
+        setInterval(() => {
             if(ss===3){
                 ss=0
             }
