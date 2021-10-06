@@ -22,7 +22,6 @@ function InnerSlider() {
             if(ss===3){
                 ss=0
             }
-            console.log("helo")
             setSliderIndex(ss)
             ss++;
         }, 5000);
@@ -35,7 +34,7 @@ function InnerSlider() {
             <div className="inner-slider">
                 {imgArr.map((e, index) => {
                     return <div className={sliderIndex === index ? "slide active-slide" : "slide"} key={index}>
-                        <img src={e} alt="" />
+                        {/* <img src={e} alt="" /> */}
                     </div>
                 })}
 

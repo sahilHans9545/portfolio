@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import About from './About';
 import Contact from './Contact';
 import Services from './Services';
 import Skills from './skills';
 import Slider from './Slider';
 import Testimonials from './Testimonials';
+
 
 function RightSection() {
 
@@ -63,6 +65,8 @@ function RightSection() {
 
 
             </header>
+
+            <About></About>
             <Skills></Skills>
             <Services></Services>
             <Testimonials></Testimonials>
