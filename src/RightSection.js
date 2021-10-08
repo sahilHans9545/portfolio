@@ -49,14 +49,14 @@ function RightSection() {
     return (
         <div className="right-section">
 
-            <header>
+            <header id="home">
 
                 <Slider />
 
 
                 <div className="text-cont">
                     <h1>Sahil Hans</h1>
-                    <h3>I am <span className="typing">{type}</span></h3>
+                    <h3>I am a <span className="typing">{type}</span></h3>
                 </div>
 
                 <div className="profile-head">

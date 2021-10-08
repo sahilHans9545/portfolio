@@ -2,9 +2,9 @@ import React from 'react'
 
 function Contact() {
     return (
-        <section className="px-md-5 px-3 py-5 contact">
+        <section className="px-md-5 px-3 py-5 contact" id="contact">
             <h1 className="section-heading">Contact</h1>
-            <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p className="my-3">If you have any kind of query, you can send me a message by filling this form. I will Contact you shortly.</p>
 
 <div className="row mt-5 d-flex justify-content-between">
     <div className="p-4 left-contact">

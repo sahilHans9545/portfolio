@@ -3,7 +3,7 @@ import AboutDetails from './AboutDetails';
 
 function About() {
     return (
-        <section className="px-md-5 px-3 py-5 About">
+        <section className="px-md-5 px-3 py-5 About" id="about">
             <h1 className="section-heading">About</h1>
             <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             <div className="row mt-4">

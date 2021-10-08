@@ -90,7 +90,7 @@ useEffect(()=>{
     
 
     return (
-        <section className=" py-5 testimonial">
+        <section className=" py-5 testimonial" id="testimonial">
         <div className="px-md-5 px-3">
             <h1 className="section-heading">Testimonials</h1>
             <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>

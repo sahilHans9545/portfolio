@@ -1,6 +1,6 @@
 const testimonialData=[
     {
-        "name":"Dong",
+        "name":"Sushil K.",
         "work":"Financialist",
         "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eius consequatur accusantium, tempora nesciunt autem ab hic commodi beatae",
         "id":1
@@ -12,28 +12,28 @@ const testimonialData=[
         "id":2
     },
     {
-        "name":"Dong",
+        "name":"Srini Doke",
         "work":"Financialist",
         "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eius consequatur accusantium, tempora nesciunt autem ab hic commodi beatae",
         "id":3
     }
     ,
     {
-        "name":"Dong",
+        "name":"Abraka",
         "work":"Financialist",
         "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eius consequatur accusantium, tempora nesciunt autem ab hic commodi beatae",
         "id":4
     }
     ,
     {
-        "name":"Dong",
+        "name":"Ricky Lake",
         "work":"Financialist",
         "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eius consequatur accusantium, tempora nesciunt autem ab hic commodi beatae",
         "id":5
     }
     ,
     {
-        "name":"Dong",
+        "name":"Arvind",
         "work":"Financialist",
         "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eius consequatur accusantium, tempora nesciunt autem ab hic commodi beatae",
         "id":6

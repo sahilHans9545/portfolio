@@ -23,11 +23,11 @@ function LeftSection(){
 
                 <div className="menu mt-5">
                     <ul>
-                        <li><a href="/"><i className="fas fa-home"></i><span>Home</span></a></li>
-                        <li><a href="/"><i className="far fa-user-circle"></i><span>About</span></a></li>
-                        <li><a href="/"><i className="fab fa-instagram"></i><span>Services</span></a></li>
-                        <li><a href="/"><i className="fas fa-street-view"></i><span>Testimonials</span></a></li>
-                        <li><a href="/"><i className="fas fa-phone-volume"></i><span>Contact</span></a></li>
+                        <li><a href="#home"><i className="fas fa-home"></i><span>Home</span></a></li>
+                        <li><a href="#about"><i className="far fa-user-circle"></i><span>About</span></a></li>
+                        <li><a href="#services"><i className="fab fa-instagram"></i><span>Services</span></a></li>
+                        <li><a href="#testimonial"><i className="fas fa-street-view"></i><span>Testimonials</span></a></li>
+                        <li><a href="#contact"><i className="fas fa-phone-volume"></i><span>Contact</span></a></li>
                     </ul>
                 </div>
 

@@ -4,7 +4,7 @@ function Services() {
 
     return (
 
-        <section className="px-md-5 px-3 py-5 services">
+        <section className="px-md-5 px-3 py-5 services" id="services">
             <h1 className="section-heading">Services</h1>
             <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 
