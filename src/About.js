@@ -8,7 +8,7 @@ function About() {
             <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             <div className="row mt-4">
                 <div className="col-lg-4">
-                    <img className="img-fluid" src={process.env.PUBLIC_URL+"/images/sahil-profile.jpg"} alt="" />
+                    <img className="img-fluid" src={process.env.PUBLIC_URL+"/images/sahilProfile.png"} alt="" />
                 </div>
                 <div className="col-lg-8 mt-4 mt-lg-0">
                     <h2 className="section-heading">UI/UX Designer & Web Developer.</h2>

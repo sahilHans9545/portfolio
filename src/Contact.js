@@ -4,7 +4,7 @@ function Contact() {
     return (
         <section className="px-md-5 px-3 py-5 contact" id="contact">
             <h1 className="section-heading">Contact</h1>
-            <p className="my-3">If you have any kind of query, you can send me a message by filling this form. I will Contact you shortly.</p>
+            <p className="my-3">If you have any kind of query, you can send me a message by filling the form given below. I will Contact you shortly.</p>
 
 <div className="row mt-5 d-flex justify-content-between">
     <div className="p-4 left-contact">
@@ -12,7 +12,7 @@ function Contact() {
             <div className="icon"><i className="fas fa-map-marker-alt"></i></div>
             <div className="text">
                 <h3>Location:</h3>
-                <p>3558 SGM Nagar, Block-A, Faridabad</p>
+                <p>3558 SGM Nagar, Block-A, Haryana,India</p>
             </div>
         </div>
 

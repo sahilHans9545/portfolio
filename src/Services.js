@@ -16,7 +16,7 @@ function Services() {
                     </div>
                     <div className="content">
                         <p className="title">Websites</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus, impedit vero provident </p>
+                        <p>I make static and Dynamic Websites both according to the clients requirement with latest technologies.</p>
 
                     </div>
 
@@ -31,7 +31,7 @@ function Services() {
                     </div>
                     <div className="content">
                         <p className="title">Landing Page</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus, impedit vero provident </p>
+                        <p>I really like to make Landing webpage,Clients provide me the design and I convert the design to webpage using my frontend Skills.</p>
                     </div>
 
                 </div>
@@ -44,7 +44,7 @@ function Services() {
                     </div>
                     <div className="content">
                         <p className="title">Website Design</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus, impedit vero provident </p>
+                        <p>Sometimes clients needs a design for their Website so I also make the designs and later on convert it to website if they need.</p>
                     </div>
 
                 </div>
@@ -57,7 +57,7 @@ function Services() {
                     </div>
                     <div className="content">
                         <p className="title">Contact Form</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus, impedit vero provident </p>
+                        <p>I make Contact Forms for Websites or Individual using php as a Backend.</p>
 
                     </div>
 
@@ -71,7 +71,7 @@ function Services() {
                     </div>
                     <div className="content">
                         <p className="title">Email Templates</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat natus, impedit vero provident </p>
+                        <p>In today's world, Every business needs a email template to increase their reach and to get more users. So, I make professional templates for them</p>
 
                     </div>
 

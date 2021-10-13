@@ -25,6 +25,7 @@ function InnerSlider() {
             setSliderIndex(ss)
             ss++;
         }, 5000);
+
     },[])
 
 

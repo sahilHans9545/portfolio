@@ -234,6 +234,11 @@ a{
   }
 }
 
+#home{
+  background-image: url(./images/head3.jpg) ;
+  background-attachment: fixed;
+}
+
 
 .slider{
   width: 100%;
