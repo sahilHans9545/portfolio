@@ -5,14 +5,15 @@ function About() {
     return (
         <section className="px-md-5 px-3 py-5 About" id="about">
             <h1 className="section-heading">About</h1>
-            <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p className="my-3">Hey I m Sahil,   </p>
             <div className="row mt-4">
                 <div className="col-lg-4">
                     <img className="img-fluid" src={process.env.PUBLIC_URL+"/images/sahilProfile.png"} alt="" />
                 </div>
                 <div className="col-lg-8 mt-4 mt-lg-0">
                     <h2 className="section-heading">UI/UX Designer & Web Developer.</h2>
-                    <p className="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    
+                    {/* <p className="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
 
                     <div className="row mt-4">
                     {AboutDetails.map((e,ind)=>{
@@ -23,7 +24,15 @@ function About() {
                         
                     </div>
 
-                    <p className="mt-4">Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                    <p className="mt-4">Here are my Education details--- <br />
+                    I am a Btech cse student. I am doing this course from Guru Govind Singh Inderprasth University. <br />
+                    I have completed my class 12th in 2020 with a percentage of 93.2
+                    I have started my developer career after my class 12th during lockdown. I have first learned html and slowly and steadily it becomes my passion to do coding. I have made some websites as practice then i started freelancing on Freelancer.com, I am also available for Interships.
+                    If you want any website for your portfolio, company , etc so you can contact me via email or any other social platform as I have also mentioned my profiles.
+                    
+                    </p>
+                    <br />
+                    <h2>My Freelancer Account <a href="https://www.freelancer.com/u/hanss9545">www.freelancer.com/u/hanss9545</a></h2>
                 </div>
             </div>
         </section>    

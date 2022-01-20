@@ -6,7 +6,7 @@ function Services() {
 
         <section className="px-md-5 px-3 py-5 services" id="services">
             <h1 className="section-heading">Services</h1>
-            <p className="my-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p className="my-3">I provide best quality work to my clients. These are the services I provide. I charge reasonable amount. If you are giving me work so be tension free , its my responsibilty to deliver best within the time period...</p>
 
             <div className="row">
                 <div className="col-md-6 col-lg-4 col-12 item">

@@ -91,9 +91,9 @@ useEffect(()=>{
 
     return (
         <section className=" py-5 testimonial" id="testimonial">
-        <div className="px-md-5 px-3">
+        <div className="px-md-5 p">
             <h1 className="section-heading">Testimonials</h1>
-            <p className="my-3">Here the the number of reviews that my clients wrote for me after the work.</p>
+            <p className="my-3">Here the the number of reviews that my clients wrote for me after the work. To Ckeck all reviews you can visit at <a href="https://www.freelancer.com/u/hanss9545">www.freelancer.com/u/hanss9545</a></p>
         </div>
             <div className="container">
                 <div className="inner-container">
